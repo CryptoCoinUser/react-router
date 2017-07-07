@@ -3,20 +3,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
-/*1.1.8 email excercise http://localhost:6060/#/emails/ */
-import {Router, Route, IndexRoute, hashHistory} from 'react-router';
-import EmailListContainer from './components/email-list-container';
-import EmailApp from './components/email-app';
-import EmailContainer from './components/email-container';
-const routes = (
-    <Router history={hashHistory}>
-        {/*<Route path="/emails" component={EmailApp}>*/}
-       	<Route path="/spam" component={EmailApp}> 
-            <IndexRoute component={EmailListContainer} />
-            <Route path=":emailId" component={EmailContainer} />
-        </Route>
-    </Router>
-);
+/*1.1.8 email excercise http://localhost:6060/#/spam/ */
+ import {Router, Route, IndexRoute, hashHistory} from 'react-router';
+ import EmailListContainer from './components/email-list-container';
+ import EmailApp from './components/email-app';
+ import EmailContainer from './components/email-container';
+ const routes = (
+     <Router history={hashHistory}>
+         {/*<Route path="/emails" component={EmailApp}>*/}
+        	<Route path="/:mailbox" component={EmailApp}> 
+             <IndexRoute component={EmailListContainer} />
+             <Route path=":emailId" component={EmailContainer} />
+         </Route>
+     </Router>
+ );
 
 
 
