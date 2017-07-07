@@ -4,7 +4,7 @@
   "description": "A React template",
   "main": "js/index.js",
   "scripts": {
-    "start": "http-server -c-1 build",
+    "start": "http-server -c-1 -p 6060 build",
     "dev": "run-p watch serve",
     "test": "mocha --recursive --compilers js:babel-core/register",
     "build": "run-s build:*",
@@ -62,7 +62,7 @@
   },
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
-    "react": "^15.3.1",
+    "react": "^15.6.1",
     "react-dom": "^15.3.1",
     "react-redux": "^4.4.5",
     "redux": "^3.6.0",
