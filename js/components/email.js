@@ -7,7 +7,7 @@ export default function Email(props) {
         	{props.from} <br />
             {props.to} <br />
             <strong>
-                <Link to={'/emails/' + props.id}>
+                <Link to={'/spam/' + props.id}>
                     {props.title}
                 </Link>
             </strong> <br />

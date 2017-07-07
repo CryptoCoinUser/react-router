@@ -6,7 +6,7 @@ import EMAILS from '../emails';
 import Email from  './email';
 
 export default function EmailContainer(props) {
-    const email = EMAILS[props.params.emailId];
+    const email = EMAILS["spam"][props.params.emailId];
     return <Email id={email.id} 
     			  name={email.name}
                   from={email.from} 
